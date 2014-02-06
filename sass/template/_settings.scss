@@ -1,0 +1,38 @@
+// Base settings for all themes that can optionally be
+// overridden by the super-theme
+
+// Background of the presentation
+$backgroundColor: #DD5B5B;
+
+// Primary/body text
+$mainFont: 'Overlock', sans-serif;
+$mainFontSize: 3em;
+$mainColor: #FFFFFF;
+
+$textShadow: 0 0.06em 0 rgba(0,0,0,0.3);
+
+// Headings
+$headingMargin: 0 0 20px 0;
+$headingFont: $mainFont;
+$headingColor: $mainColor;
+$headingLineHeight: .9em;
+$headingLetterSpacing: 0.02em;
+$headingTextTransform: uppercase;
+$headingTextShadow: $textShadow;
+$heading1TextShadow: $headingTextShadow;
+
+// Links and actions
+$linkColor: #127EA4;
+$linkColorHover: lighten( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: #FF5E99;
+$selectionColor: #fff;
+
+$progressColor: #10799E;
+
+// Generates the presentation background, can be overridden
+// to return a background image or gradient
+@mixin bodyBackground() {
+	background: $backgroundColor;
+}

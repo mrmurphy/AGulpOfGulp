@@ -1,0 +1,61 @@
+section(data-background="#896BC8")
+
+  section
+    h1 When Order Matters
+    p.example-emphasize
+      | gulp.task('serve',
+      span(class='emphasized') ['sass', 'jade']
+      | , function() {
+      br
+      |  &nbsp&nbsp&nbsp&nbsp...
+      br
+      | });
+
+  section
+    h2 Three ways
+    p Tasks are async by default.
+      br
+      | Signaling is up to you!
+    ol
+      li Return a stream
+      li Callback
+      li Return a promise
+
+  section
+    h2 1. Return a Stream
+    pre
+      code(class="javascript").
+        gulp.task('jade', function() {
+          return gulp.src(sources.jade)
+          .pipe(jade())
+          .pipe(gulp.dest("./public/"));
+        });
+  section
+    h2 2. Callback
+    pre
+      code(class="javascript").
+        gulp.task('sass', function(cb) {
+          gulp.src(sources.sass)
+          .pipe(sass())
+          .pipe(gulp.dest("./public"))
+          .on('end', function() {
+            cb(null);
+          });
+        });
+  section
+    h2 3. Return a Promise
+    pre
+      code(class="javascript").
+        gulp.task('sass', function() {
+          var deferred = Q.defer();
+          gulp.src(sources.sass)
+          .pipe(sass())
+          .pipe(gulp.dest("./public"))
+          .on('end', function() {
+            deferred.resolve();
+          })
+          .on('error', function(err){
+            deferred.reject(err);
+          });
+          return deferred.promise();
+        });

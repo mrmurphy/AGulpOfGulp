@@ -1,0 +1,49 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title A Gulp of Gulp.js - Introductory Presentation
+    meta(name='description', content='A delicious talk about the Gulp.js build tool.')
+    meta(name='author', content='Murphy Randle')
+    meta(name='apple-mobile-web-app-capable', content='no')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    link(rel='stylesheet', href='reveal.min.css')
+    link(rel='stylesheet', href='theme.css')
+    // For syntax highlighting
+    link(rel='stylesheet', href='lib/css/zenburn.css')
+  body
+    .reveal
+      // Any section element inside of this container is displayed as a slide
+      .slides
+        include includes/title
+        include includes/hotdrama
+        include includes/whatsthediff
+        include includes/imparitivevsdeclarative
+        include includes/streams
+        include includes/plugins
+        include includes/overview
+        include includes/fourthings
+        include includes/pipes
+        include includes/whenordermatters
+        include includes/rememberitsnode
+        include includes/livedemo
+
+  script(src='lib/js/head.min.js')
+  script(src='js/reveal.js')
+  script.
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: false,
+      progress: true,
+      history: true,
+      center: false,
+      transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+      dependencies: [
+        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+        { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+    });

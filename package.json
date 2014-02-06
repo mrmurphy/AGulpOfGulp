@@ -1,0 +1,29 @@
+{
+  "name": "AGulpOfGulp",
+  "version": "0.0.0",
+  "description": "A presentation on Gulpjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "presentation",
+    "slides",
+    "gulp",
+    "gulpjs",
+    "build",
+    "system",
+    "deck"
+  ],
+  "author": "Murphy Randle (murphyrandle.github.com)",
+  "license": "USE IT FOR ALL THE THINGS LISENCE",
+  "dependencies": {
+    "gulp": "~3.5.1",
+    "gulp-util": "~2.2.14",
+    "gulp-jade": "~0.4.1",
+    "gulp-sass": "~0.6.0",
+    "connect": "~2.12.0",
+    "gulp-livereload": "~0.3.1",
+    "tiny-lr": "0.0.5"
+  }
+}

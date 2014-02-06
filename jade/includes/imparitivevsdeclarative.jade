@@ -1,0 +1,24 @@
+section(data-background="#3CC8AE")
+  h1 Imperative VS Declarative
+
+  section
+      p Grunt (Declarative)
+      pre
+        code.
+          concat: {
+            options: {
+              separator: ';'
+            },
+            dist: {
+              src: ['./lib/**/*.js'],
+              dest: 'dist/all.js'
+            }
+          }
+
+  section
+      p Gulp (Imperative)
+      pre
+        code.
+            gulp.src("./lib/**/*.js")
+              .pipe(concat("all.js", {newLine: ";"}))
+              .pipe(gulp.dest("./dist/"));

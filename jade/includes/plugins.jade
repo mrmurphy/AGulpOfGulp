@@ -1,0 +1,19 @@
+section(data-background="#3CC8AE")
+  h1 Plugins
+
+  section
+    img(src="http://img7.joyreactor.cc/pics/post/%D0%B3%D0%B8%D1%84%D0%BA%D0%B8-%D0%9F%D0%BB%D0%B0%D0%BD%D1%88%D0%B5%D1%82-%D0%B1%D1%83%D0%BC%D0%B0%D0%B3%D0%B0-%D1%83%D1%80%D0%BE%D0%BA-598757.gif"
+        , style="width: 100%")
+  section
+    img(src="http://media.giphy.com/media/xJyytHlolWK8o/giphy.gif",
+        style="width:100%")
+  section
+    pre
+      code.
+        gulp.task('serve', ['sass', 'jade'], function(cb) {
+          startLivereload();
+          connect()
+          .use(connect.static('./public'))
+          .listen(8787);
+          watch();
+        });

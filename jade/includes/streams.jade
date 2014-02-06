@@ -1,0 +1,28 @@
+section(data-background="#3CC8AE")
+  h1 Streams
+
+  p An example from
+    a(href="http://markgoodyear.com/2014/01/getting-started-with-gulp/")
+       | Getting Started With Gulp
+
+  pre
+    code(class="javascript").
+      gulp.task('scripts', function() {
+        return gulp.src('src/scripts/**/*.js')
+          .pipe(jshint('.jshintrc'))
+          .pipe(jshint.reporter('default'))
+          .pipe(concat('main.js'))
+          .pipe(gulp.dest('dist/assets/js'))
+          .pipe(rename({suffix: '.min'}))
+          .pipe(uglify())
+          .pipe(gulp.dest('dist/assets/js'))
+          .pipe(livereload(server))
+          .pipe(notify({ message: 'Scripts task complete' }));
+      });
+
+  p
+    span(class="fragment") No temp files!
+      br
+    span(class="fragment") SO CLEAN!
+      br
+    span(class="fragment") wow.
