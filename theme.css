@@ -104,28 +104,28 @@ body {
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled {
-  border-right-color: #127EA4; }
+  border-right-color: rgba(255, 255, 255, 0.7); }
 
 .reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled {
-  border-left-color: #127EA4; }
+  border-left-color: rgba(255, 255, 255, 0.7); }
 
 .reveal .controls div.navigate-up, .reveal .controls div.navigate-up.enabled {
-  border-bottom-color: #127EA4; }
+  border-bottom-color: rgba(255, 255, 255, 0.7); }
 
 .reveal .controls div.navigate-down, .reveal .controls div.navigate-down.enabled {
-  border-top-color: #127EA4; }
+  border-top-color: rgba(255, 255, 255, 0.7); }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #33bbe9; }
+  border-right-color: rgba(255, 255, 255, 0.7); }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #33bbe9; }
+  border-left-color: rgba(255, 255, 255, 0.7); }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #33bbe9; }
+  border-bottom-color: rgba(255, 255, 255, 0.7); }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #33bbe9; }
+  border-top-color: rgba(255, 255, 255, 0.7); }
 
 /*********************************************
  * PROGRESS BAR
