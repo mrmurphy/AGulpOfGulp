@@ -143,38 +143,38 @@ body {
 
 .reveal .controls div.navigate-left,
 .reveal .controls div.navigate-left.enabled {
-  border-right-color: $linkColor;
+  border-right-color: $controlsColor;
 }
 
 .reveal .controls div.navigate-right,
 .reveal .controls div.navigate-right.enabled {
-  border-left-color: $linkColor;
+  border-left-color: $controlsColor;
 }
 
 .reveal .controls div.navigate-up,
 .reveal .controls div.navigate-up.enabled {
-  border-bottom-color: $linkColor;
+  border-bottom-color: $controlsColor;
 }
 
 .reveal .controls div.navigate-down,
 .reveal .controls div.navigate-down.enabled {
-  border-top-color: $linkColor;
+  border-top-color: $controlsColor;
 }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: $linkColorHover;
+  border-right-color: $controlsColorHover;
 }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: $linkColorHover;
+  border-left-color: $controlsColorHover;
 }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: $linkColorHover;
+  border-bottom-color: $controlsColorHover;
 }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: $linkColorHover;
+  border-top-color: $controlsColorHover;
 }
 
 

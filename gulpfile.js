@@ -48,9 +48,9 @@ gulp.task('sass', function(cb) {
   .pipe(gulp.dest("./public"))
   .on('end', function() {
     cb(null); // Pass in null, assuming there were no errors in the stream.
-    // Really, Using promises (not shown here) or returning the stream are
-    // better ways to indicate task completion, because either of those styles
-    // encourage better error handling than this style does.
+  })
+  .on('error', function(err) {
+    ch(err);
   });
 });
 
@@ -96,3 +96,6 @@ gulp.task('serve', ['sass', 'jade'], function(cb) {
   .listen(8787);
   watch();
 });
+
+
+gulp.task('default', ['serve']);

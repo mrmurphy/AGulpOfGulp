@@ -25,6 +25,9 @@ $heading1TextShadow: $headingTextShadow;
 $linkColor: #127EA4;
 $linkColorHover: lighten( $linkColor, 20% );
 
+$controlsColor: rgba(#FFF, 0.7);
+$controlsColorHover: $controlsColor;
+
 // Text selection
 $selectionBackgroundColor: #FF5E99;
 $selectionColor: #fff;

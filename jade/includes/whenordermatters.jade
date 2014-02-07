@@ -40,6 +40,9 @@ section(data-background="#896BC8")
           .pipe(gulp.dest("./public"))
           .on('end', function() {
             cb(null);
+          })
+          .on('error', function(err) {
+            cb(err);
           });
         });
   section
